@@ -14,21 +14,21 @@ export const ui = {
     brand: 'زوروان لینوکس',
     documentTitle: 'زوروان لینوکس — توزیع لینوکس برای فارسی‌زبانان',
     metaDescription:
-      'زوروان لینوکس، توزیعی مبتنی بر دبیان ۱۳ با میزکار کِ‌دِ‌ای پلاسما ۶.۷، بومی‌سازی‌شده برای کاربران و توسعه‌دهندگان فارسی‌زبان.',
+      'زوروان لینوکس، توزیعی مبتنی بر دبیان پایدار با میزکار کِ‌دِ‌ای پلاسما، بومی‌سازی‌شده برای کاربران و توسعه‌دهندگان فارسی‌زبان.',
     skipToContent: 'رفتن به محتوای اصلی',
     languageToggleLabel: 'تغییر زبان',
-    heroTagline: 'توزیع لینوکس مبتنی بر دبیان ۱۳، ساخته‌شده برای فارسی‌زبانان',
+    heroTagline: 'توزیع لینوکس مبتنی بر دبیان پایدار، ساخته‌شده برای فارسی‌زبانان',
     heroLead:
       'نام زوروان از ایزد دانای زمان بی‌انتها گرفته شده است؛ توزیعی پایدار و مدرن با بومی‌سازی کامل فارسی، پشتیبانی از فلت‌پک و ابزارهای دور زدن محدودیت‌های شبکه.',
     ctaDocs: 'مستندات و مشخصات فنی',
     ctaRepos: 'مخازن پروژه',
     missionTitle: 'درباره زوروان',
     missionBody:
-      'زوروان لینوکس روی پایه‌ی سنگ‌محک دبیان ۱۳ (تریکسی) ساخته شده و میزکار کِ‌دِ‌ای پلاسما ۶.۷ را با نشست وِیلَند به‌صورت پیش‌فرض ارائه می‌کند. فونت وزیرمتن، چیدمان راست‌چین، صفحه‌کلید استاندارد فارسی (اسیری ۹۱۴۷) و نیم‌فاصله به‌صورت بومی پیکربندی شده‌اند. کدک‌های چندرسانه‌ای، شتاب‌دهنده‌های گرافیکی و ادغام فلت‌هاب از تجربه‌ای بی‌دردسر سراسری پشتیبانی می‌کنند.',
+      'زوروان لینوکس روی پایه‌ی سنگ‌محک دبیان پایدار ساخته شده و میزکار کِ‌دِ‌ای پلاسما را با نشست وِیلَند به‌صورت پیش‌فرض ارائه می‌کند. فونت وزیرمتن، چیدمان راست‌چین، صفحه‌کلید استاندارد فارسی (اسیری ۹۱۴۷) و نیم‌فاصله به‌صورت بومی پیکربندی شده‌اند. کدک‌های چندرسانه‌ای، شتاب‌دهنده‌های گرافیکی و ادغام فلت‌هاب از تجربه‌ای بی‌دردسر سراسری پشتیبانی می‌کنند.',
     featuresTitle: 'ویژگی‌های کلیدی',
     features: [
-      { t: 'مبتنی بر دبیان ۱۳', d: 'پایداری و امنیتی که از دبیان بلامنازع است.' },
-      { t: 'میزکار کِ‌دِ‌ای پلاسما ۶.۷', d: 'نشست وِیلَند به‌طور پیش‌فرض، با پشتیبان X11.' },
+      { t: 'مبتنی بر دبیان پایدار', d: 'پایداری و امنیتی که از دبیان بلامنازع است.' },
+      { t: 'میزکار کِ‌دِ‌ای پلاسما', d: 'نشست وِیلَند به‌طور پیش‌فرض، با پشتیبان X11.' },
       { t: 'بومی‌سازی کامل فارسی', d: 'فونت وزیرمتن، چیدمان راست‌چین و تقویم جلالی.' },
       { t: 'صفحه‌کلید استاندارد', d: 'چیدمان فارسی اسیری ۹۱۴۷ با نیم‌فاصله روی Shift+Space.' },
       { t: 'کدک‌ها و گرافیک', d: 'پخش همه‌فرمتی و شتاب‌دهنده VA-API/VDPAU از جعبه.' },
@@ -52,21 +52,21 @@ export const ui = {
     brand: 'Zurvan Linux',
     documentTitle: 'Zurvan Linux — a Debian-based distro for Persian speakers',
     metaDescription:
-      'Zurvan Linux: a Debian 13 (Trixie) distribution with KDE Plasma 6.7, built and localized for Persian-speaking users and developers.',
+      'Zurvan Linux: a Debian Stable distribution with the latest KDE Plasma, built and localized for Persian-speaking users and developers.',
     skipToContent: 'Skip to content',
     languageToggleLabel: 'Switch language',
-    heroTagline: 'A Debian 13-based Linux distribution, built for Persian speakers',
+    heroTagline: 'A Debian Stable-based Linux distribution, built for Persian speakers',
     heroLead:
       'Named after Zurvan, the Persian deity of infinite time: a stable, modern distro with full Persian localization, Flatpak support, and modular network-bypass tooling.',
     ctaDocs: 'Spec & architecture',
     ctaRepos: 'Project repositories',
     missionTitle: 'About Zurvan',
     missionBody:
-      'Zurvan Linux is built on the rock-solid Debian 13 (Trixie) foundation and ships KDE Plasma 6.7 with a Wayland session by default. Vazirmatn typography, RTL mirroring, the standard Persian keyboard (ISIRI 9147) and ZWNJ are configured natively. Multimedia codecs, graphics acceleration and Flathub integration make for an out-of-the-box experience.',
+      'Zurvan Linux is built on the rock-solid Debian Stable foundation and ships the latest KDE Plasma with a Wayland session by default. Vazirmatn typography, RTL mirroring, the standard Persian keyboard (ISIRI 9147) and ZWNJ are configured natively. Multimedia codecs, graphics acceleration and Flathub integration make for an out-of-the-box experience.',
     featuresTitle: 'Key features',
     features: [
-      { t: 'Debian 13 base', d: 'The stability and security Debian is known for.' },
-      { t: 'KDE Plasma 6.7', d: 'Wayland session by default, with an X11 fallback.' },
+      { t: 'Debian Stable base', d: 'The stability and security Debian is known for.' },
+      { t: 'KDE Plasma (latest stable)', d: 'Wayland session by default, with an X11 fallback.' },
       { t: 'Full Persian locale', d: 'Vazirmatn font, RTL mirroring, Jalali calendar.' },
       { t: 'Standard keyboard', d: 'ISIRI 9147 Persian layout with ZWNJ on Shift+Space.' },
       { t: 'Codecs & graphics', d: 'Every-format playback plus VA-API/VDPAU, out of the box.' },
