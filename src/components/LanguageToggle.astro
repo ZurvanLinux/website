@@ -1,0 +1,18 @@
+---
+import { languages } from '../i18n/ui';
+import type { Locale } from '../i18n/ui';
+
+interface Props { current: Locale; label: string }
+const { current, label } = Astro.props;
+---
+
+<nav class="lang-toggle" aria-label={label}>
+  {languages.map((l, i) => (
+    <Fragment>
+      {i > 0 && <span aria-hidden="true">·</span>}
+      <a class="opt" href={l.path} lang={l.code} aria-current={l.code === current ? 'true' : 'false'}>
+        {l.label}
+      </a>
+    </Fragment>
+  ))}
+</nav>

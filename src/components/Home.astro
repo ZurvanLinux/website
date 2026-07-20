@@ -1,0 +1,112 @@
+---
+import type { Locale } from '../i18n/ui';
+import { ui } from '../i18n/ui';
+import { repos } from '../data/repos';
+import LanguageToggle from './LanguageToggle.astro';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const t = ui[lang];
+const isFa = lang === 'fa';
+const otherPath = isFa ? '/en/' : '/';
+const releasesUrl = 'https://github.com/ZurvanLinux/iso-builder/releases';
+const docsUrl = 'https://github.com/ZurvanLinux/ZurvanLinux';
+---
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href={isFa ? '/' : '/en/'} aria-label={t.brand}>
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="2.5" stroke-dasharray="40 12" />
+        <line x1="16" y1="16" x2="16" y2="7" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" />
+        <line x1="16" y1="16" x2="22" y2="16" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" />
+        <circle cx="16" cy="16" r="1.8" fill="var(--accent)" />
+      </svg>
+      <span>{t.brand}</span>
+    </a>
+    <LanguageToggle current={lang} label={t.languageToggleLabel} />
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1>{t.brand}</h1>
+    <div class="tagline">{t.heroTagline}</div>
+    <p class="lead">{t.heroLead}</p>
+    <div class="cta">
+      <a class="btn btn-primary" href={docsUrl} target="_blank" rel="noopener">{t.ctaDocs}</a>
+      <a class="btn btn-ghost" href="#repos">{t.ctaRepos}</a>
+    </div>
+  </div>
+</section>
+
+<!-- Mission -->
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <h2>{t.missionTitle}</h2>
+    </div>
+    <p style="max-width:70ch;margin-inline:auto;text-align:center;color:var(--text-dim);">{t.missionBody}</p>
+  </div>
+</section>
+
+<!-- Features -->
+<section id="features" style="padding-block-start:0;">
+  <div class="container">
+    <div class="section-head"><h2>{t.featuresTitle}</h2></div>
+    <div class="grid">
+      {t.features.map((f) => (
+        <article class="card">
+          <h3>{f.t}</h3>
+          <p>{f.d}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- Repo map -->
+<section id="repos">
+  <div class="container">
+    <div class="section-head">
+      <h2>{t.reposTitle}</h2>
+      <p>{t.reposLead}</p>
+    </div>
+    <div class="grid">
+      {repos.map((r) => (
+        <a class="card repo" href={r.url} target="_blank" rel="noopener">
+          <span class="name">{r.name}</span>
+          <span>{r.description[lang]}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- Download -->
+<section class="download" id="download">
+  <div class="container">
+    <div class="section-head">
+      <h2>{t.downloadTitle}</h2>
+      <p>{t.downloadLead}</p>
+    </div>
+    <span class="badge">{t.downloadStatusBadge}</span>
+    <div class="cta" style="display:flex;">
+      <a class="btn btn-ghost" href={releasesUrl} target="_blank" rel="noopener">{t.downloadCta}</a>
+      <a class="btn btn-ghost" href={otherPath}>{isFa ? 'English' : 'فارسی'}</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <span>{t.footerMission}</span>
+    <nav style="display:flex;gap:1rem;flex-wrap:wrap;">
+      <a href={docsUrl} target="_blank" rel="noopener">{t.footerDocs}</a>
+      <a href="https://github.com/ZurvanLinux" target="_blank" rel="noopener">{t.footerCode}</a>
+    </nav>
+  </div>
+</footer>
